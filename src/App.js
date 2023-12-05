@@ -20,14 +20,15 @@ function App() {
   console.log(data);
 
   return (
-    <div className="App">
-      {data.length === 0 ? (
-        <span class="loader"></span>
-      ) : (
-        data.map((character) => {
+    <div>
+      <div className="cardsContainer">
+        {data.map((character) => {
           return <div>{<Card character={character} />}</div>;
-        })
-      )}
+        })}
+      </div>
+      <div className="elements"> elements </div>
+      <div className="elements"> elements </div>
+      <div className="elements"> elements </div>
     </div>
   );
 }
